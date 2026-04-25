@@ -1,4 +1,3 @@
-<<<<<<< codex/clone-and-migrate-personal-wiki-ggo3ga
 # Personal Wiki (Flask)
 
 요청하신 외부 사이트를 그대로 복제하거나 권한 없는 DB를 이전하는 작업은 도와드릴 수 없습니다.
