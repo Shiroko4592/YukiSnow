@@ -1,0 +1,6 @@
+body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 1rem; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; }
+textarea { width:100%; }
+pre { white-space: pre-wrap; background:#f6f6f6; padding:1rem; border-radius:8px; }
+label { display:block; margin-bottom:1rem; }
+.flash { color: #146c2e; }

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ rev['title'] }} - Revision #{{ rev['id'] }}</h1>
+<p>{{ rev['created_at'] }}</p>
+<pre>{{ rev['content'] }}</pre>
+<p><a href="{{ url_for('wiki_page', slug=rev['slug']) }}">문서로 돌아가기</a></p>
+{% endblock %}
