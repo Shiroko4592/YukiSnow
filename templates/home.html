@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>문서 목록</h1>
+<ul>
+  {% for page in pages %}
+  <li><a href="{{ url_for('wiki_page', slug=page['slug']) }}">{{ page['title'] }}</a> <small>{{ page['updated_at'] }}</small></li>
+  {% else %}
+  <li>아직 문서가 없습니다.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

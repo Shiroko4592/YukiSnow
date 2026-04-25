@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ "문서 수정" if page else "문서 생성" }}</h1>
+<form method="post" action="{{ url_for('wiki_page', slug=(page['slug'] if page else slug)) }}">
+  <label>제목 <input type="text" name="title" value="{{ page['title'] if page else '' }}" required></label>
+  <label>내용 <textarea name="content" rows="20">{{ page['content'] if page else '' }}</textarea></label>
+  <button type="submit">저장</button>
+</form>
+{% endblock %}
